@@ -144,7 +144,7 @@ header h2 {
 .aboutContainer .buttons a {
     text-decoration: none;
     padding: 10px;
-    margin: 20px 40px 20px 0px;
+    margin: 20px 20px 20px 20px;
     font-size: 1.2em;
     color: #FFF;
     border: 4px solid #FFF;
@@ -175,6 +175,7 @@ header h2 {
     border: 5px solid white;
     background-color: #26272F;
     font-weight: bold;
+    max-width: 80%;
 }
 
 /* SKILLS ========================================== */
@@ -332,7 +333,84 @@ header h2 {
     background-color: #26272F;
     border-top: 4px solid white;
     height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
 }
+
+.footer h3 {
+    color:  #fff;
+    font-size: 1.5em;
+    padding: 10px;
+    border: 4px solid #fff;
+}
+
+.legal {
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+}
+
+.legal a {
+    color: #fff;
+    text-decoration: none;  
+}
+
+.legal a:hover {
+    color: #444247; 
+}
+
+.toTop {
+    position: absolute;
+    right: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toTop p {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.arrow {
+    display: block;
+    height: 40px;
+    width: 40px;
+    fill: #fff;
+}
+
+.soc li {
+  display: inline-block;
+  margin: 10px;
+}
+.soc a, .soc svg {
+  display: block;
+}
+.soc a {
+  position: relative;
+  height: 50px;
+  width: 50px;
+}
+.soc svg {
+  height: 100%;
+  width: 100%;
+}
+
+.icon:hover {
+  fill: #272830;
+  transform: scale(1.25);
+  transition: background-color 0.5s, transform 0.5s ease-out;
+  background: #fff;
+}
+
+.icon {
+  fill: #fff;
+}
+
 
 @keyframes border-pulsate {
     0%   { border-color: rgba(255, 255, 255, 1); }
