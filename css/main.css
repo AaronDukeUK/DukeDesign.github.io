@@ -30,21 +30,21 @@ header {
 
 
 #logo {
-    background-image: url(../img/design_logo.svg);
+    background-image: url(../img/grid_logo.svg);
     background-repeat: no-repeat;
-    height: 300px;
-    width: 400px;
-    margin-left: 30px;
-    margin-top: 30px;
-    transition: all 0.75s ease-in;
+    height: 250px;
+    margin-top: 25px;
+    margin-left: 100px;
+    transition: all 0.75s linear;
     flex: 1;
 
    
 }
 
 .scrollLogo {
-    transform: scale(0.3) translate(-515px, -420px); 
-    transition: all 0.75s ease;
+    transform: scale(0.2); 
+    transform-origin: top left;
+    transition: all 0.75s linear;
     
 }
 
@@ -101,7 +101,7 @@ header h2 {
 }
 
 .contactNav a, .projectsNav a {
-    background-color: #808080;
+    background-color: #26272F;
 }
 
 /* ABOUT ========================================== */
@@ -143,36 +143,35 @@ header h2 {
 
 .aboutContainer .buttons a {
     text-decoration: none;
-    padding: 10px;
+    padding: 20px;
     margin: 20px 20px 20px 20px;
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #FFF;
     border: 4px solid #FFF;
     font-weight: bold;
 }
 
 .aboutContainer .buttons a:hover {
-    animation: border-pulsate 2s infinite;
+    animation: breathing 7s linear infinite;
 }
 
 /* QUOTE 1 ========================================== */
 
 .quote {
     margin-top: -30px;
-    background-color: #fff;
+    background-color: #A8A8AB;
     height: 35vh;
+    border: 4px solid #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top: 4px solid #26272F;
-    border-bottom: 4px solid #26272F;
 }
 
 .quote h2 {
     font-size: 32px;
     padding: 20px;
     color: #fff;
-    border: 5px solid white;
+    border: 4px solid #fff;
     background-color: #26272F;
     font-weight: bold;
     max-width: 80%;
@@ -266,7 +265,7 @@ header h2 {
 .skillbar-bar {
 	height:35px;
 	width:0px;
-    background-color: darkgray;
+    background-color: #292B32;
 }
 
 .skill-bar-percent {
@@ -289,43 +288,107 @@ header h2 {
     width: 100%;
     background-image: url(../img/shattered-island.gif);
     background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.container {
+.portfolio .container {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
-    min-height: 50vh;
-    margin: 200px auto 0;
+    width: 80%;
+    height: 80vh;
+    border: 4px solid #fff;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: rgba(38, 39, 47, 0.8); 
 }
 
-.floater {
-    position: relative;
-    color: #fff;
-    left: 10px;
-    top: -50px;
-    font-size: 4em;
-    transform: rotate(-22.5deg);
-}
-
-.project {
-    background-color: lightgrey;
-    flex: 1;
-    min-width: 30%;
+.items {
     min-height: 30%;
-    border: 2px solid black;
+    min-width: 20%;
+    margin: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #fff;
+    
+}
+
+.items:nth-child(1) {
+    background: url(https://placeimg.com/300/300/tech);
+}
+
+.items:nth-child(2) {
+    background: url(https://placeimg.com/301/300/tech);
+}
+
+.items:nth-child(3) {
+    background: url(https://placeimg.com/305/300/tech);
+}
+
+.items:nth-child(4) {
+    background: url(https://placeimg.com/320/300/tech);
+}
+
+.items:nth-child(5) {
+    background: url(https://placeimg.com/459/300/tech);
+}
+
+.items:nth-child(6) {
+    background: url(https://placeimg.com/300/310/tech);
+}
+
+.items:nth-child(7) {
+    background: url(https://placeimg.com/300/312/tech);
+}
+
+.items:nth-child(8) {
+    background: url(https://placeimg.com/300/313/tech);
+}
+.items:nth-child(9) {
+    background: url(https://placeimg.com/309/311/tech);
+}
+
+.items:nth-child(10) {
+    background: url(https://placeimg.com/300/317/tech);
+}
+
+.items:nth-child(11) {
+    background: url(https://placeimg.com/325/312/tech);
+}
+
+.items:nth-child(12) {
+    background: url(https://placeimg.com/331/313/tech);
+}
+
+.linkItem {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(38, 39, 47, 0.8);
+    text-decoration: none;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.75s ease-in;
 }
 
-.project a {
-    text-decoration: none;
-    padding: 10px;
-    background: grey;
-    color: #fff;
-    border: 4px solid #fff;
+.linkItem:hover {
+    background-color: rgba(38, 39, 47, 0);
+    transition: all 0.75s ease-in;
+    
 }
+
+.linkItem span {
+    font-weight: bold;
+    font-size: 1em;
+    border: 4px solid #fff;
+    padding: 10px;
+    opacity: 1;
+    transition: all 0.75s ease-in; 
+}
+
 
 /* FOOTER ========================================== */
 
@@ -344,7 +407,7 @@ header h2 {
     color:  #fff;
     font-size: 1.5em;
     padding: 10px;
-    border: 4px solid #fff;
+    margin-top: 20px;
 }
 
 .legal {
@@ -365,10 +428,16 @@ header h2 {
 .toTop {
     position: absolute;
     right: 50px;
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 10px 10px 10px;
+    transition: all 0.5s ease-out;
+}
+
+.toTop:hover {
+    opacity: 0.5;
+    transition: all 0.5s ease-out;
 }
 
 .toTop p {
@@ -403,12 +472,13 @@ header h2 {
 .icon:hover {
   fill: #272830;
   transform: scale(1.25);
-  transition: background-color 0.5s, transform 0.5s ease-out;
+  transition: all 0.5s ease-out;
   background: #fff;
 }
 
 .icon {
   fill: #fff;
+  transition: all 1s ease-out;
 }
 
 
@@ -418,6 +488,21 @@ header h2 {
     100% { border-color: rgba(255, 255, 255, 1); }
 }
 
+@keyframes breathing {
+  0% { transform: scale(1);}
+  25% { transform: scale(1.2);}
+  50% { transform: scale(1);}
+  75% { transform: scale(0.8);}
+  100% { transform: scale(1);}
+}
 
+.animation-element.slide-left {
+  opacity: 0;
+  transition: all 0.5s ease-in;
+  transform: translate3d(-100px, 0px, 0px);
+}
 
-
+.animation-element.slide-left.in-view {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
