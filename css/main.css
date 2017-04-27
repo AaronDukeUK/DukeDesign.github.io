@@ -308,37 +308,37 @@ header {
 }
 
 .items:nth-child(1) {
-    background: url('../img/agency.PNG');
+    background: url('../img/agency.png');
     background-position: center;
     background-size: cover;
 }
 
 .items:nth-child(2) {
-    background: url('../img/best.PNG');
+    background: url('../img/best.png');
     background-position: center;
     background-size: cover;
 }
 
 .items:nth-child(3) {
-    background: url('../img/conf.PNG');
+    background: url('../img/conf.png');
     background-position: center;
     background-size: cover;
 }
 
 .items:nth-child(4) {
-    background: url('../img/california.PNG');
+    background: url('../img/california.png');
     background-position: center;
     background-size: cover;
 }
 
 .items:nth-child(5) {
-     background: url('../img/rsvp.PNG');
+     background: url('../img/rsvp.png');
     background-position: center;
     background-size: cover;
 }
 
 .items:nth-child(6) {
-    background: url('../img/puppy.PNG');
+    background: url('../img/puppy.png');
     background-position: center;
     background-size: cover;
 }
