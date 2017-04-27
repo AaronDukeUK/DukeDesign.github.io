@@ -308,7 +308,7 @@ header {
 }
 
 .items:nth-child(1) {
-    background: url('../img/agency.PNG');
+    background: url('../img/ag.PNG');
     background-position: center;
     background-size: cover;
 }
