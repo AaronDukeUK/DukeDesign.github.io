@@ -299,7 +299,7 @@ header {
 
 .items {
     min-height: 30%;
-    min-width: 20%;
+    min-width: 30%;
     margin: 10px;
     background-position: center;
     background-repeat: no-repeat;
@@ -308,51 +308,42 @@ header {
 }
 
 .items:nth-child(1) {
-    background: url(https://placeimg.com/300/300/tech);
+    background: url(../img/Agency.PNG);
+    background-position: center;
+    background-size: cover;
 }
 
 .items:nth-child(2) {
-    background: url(https://placeimg.com/301/300/tech);
+    background: url(../img/Best.PNG);
+    background-position: center;
+    background-size: cover;
 }
 
 .items:nth-child(3) {
-    background: url(https://placeimg.com/305/300/tech);
+    background: url(../img/Conf.PNG);
+    background-position: center;
+    background-size: cover;
 }
 
 .items:nth-child(4) {
-    background: url(https://placeimg.com/320/300/tech);
+    background: url(../img/California.PNG);
+    background-position: center;
+    background-size: cover;
 }
 
 .items:nth-child(5) {
-    background: url(https://placeimg.com/459/300/tech);
+     background: url(../img/RSVP.PNG);
+    background-position: center;
+    background-size: cover;
 }
 
 .items:nth-child(6) {
-    background: url(https://placeimg.com/300/310/tech);
+    background: url(../img/Puppy.PNG);
+    background-position: center;
+    background-size: cover;
 }
 
-.items:nth-child(7) {
-    background: url(https://placeimg.com/300/312/tech);
-}
 
-.items:nth-child(8) {
-    background: url(https://placeimg.com/300/313/tech);
-}
-.items:nth-child(9) {
-    background: url(https://placeimg.com/309/311/tech);
-}
-
-.items:nth-child(10) {
-    background: url(https://placeimg.com/300/317/tech);
-}
-
-.items:nth-child(11) {
-    background: url(https://placeimg.com/325/312/tech);
-}
-
-.items:nth-child(12) {
-    background: url(https://placeimg.com/331/313/tech);
-}
 
 .linkItem {
     display: block;

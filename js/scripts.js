@@ -84,3 +84,8 @@ function check_if_in_view() {
 
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
+
+
+$('.arrow').on('click', function() {
+  document.body.scrollTop = 0;
+});
