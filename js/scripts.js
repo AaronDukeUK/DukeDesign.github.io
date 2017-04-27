@@ -1,6 +1,10 @@
 $('a').click(function(evt) {
-    evt.preventDefault();
+   event.stopPropagation();
 });
+
+$('a[href="#"]').click(function(evt) {
+   event.preventDefault();
+});;
 
 
 $('#projects').click(function() {
