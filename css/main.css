@@ -17,11 +17,11 @@ header {
     border-bottom: 4px solid rgba(255,255,255,0);
     transition: all 1s ease-in;
     z-index: 1000;
-    
+
 }
 
 .scroll {
-    background-color: #26272F; 
+    background-color: #26272F;
     border-bottom: 4px solid rgba(255,255,255,1);
     background-clip: padding-box;
     transition: all 1s ease-in;
@@ -33,20 +33,21 @@ header {
     background-image: url('../img/grid_logo.svg');
     background-repeat: no-repeat;
     min-height: 225px;
+    max-height: 225px;
     margin-top: 25px;
     margin-left: 40px;
     margin-right: 40px;
-    transform-origin: top left;
     transition: all 0.75s linear;
-    flex: 1; 
+    flex: 1;
     display: block;
 }
 
-.scrollLogo {
-    transform: scale(0.3); 
-    transform-origin: top left;
+#logo.scrollLogo {
+    min-height: 80px;
+    max-height: 80px;
+    margin-top: 10px;
     transition: all 0.75s linear;
-    
+
 }
 
 
@@ -59,8 +60,8 @@ header {
 .mainNav a {
     text-decoration: none;
     padding: 10px;
-    margin: 15px 40px 20px 0px;
-    font-size: 1.2em;
+    margin: 15px 40px 20px 0;
+    font-size: 1em;
     font-weight: bold;
     color: #FFF;
     border: 4px solid #FFF;
@@ -101,7 +102,8 @@ header {
 .about {
     color: #FFF;
     width: 100%;
-    height: 103vh;
+    padding: 200px 0;
+    min-height: 103vh;
     background-image: url('../img/shattered-island.gif');
     background-attachment: fixed;
     display: flex;
@@ -109,13 +111,9 @@ header {
     justify-content: center;
 }
 
-.aboutContainer {
-    
-}
-
 .aboutContainer h3 {
     margin-top: 100px;
-    font-size: 2.5em;
+    font-size: 2.2em;
     width: 100%;
     font-weight: bold;
     text-align: center;
@@ -124,9 +122,9 @@ header {
 .aboutContainer h4 {
     margin-top: 30px;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-family: 'Raleway', sans-serif;
-    
+
 }
 
 .aboutContainer .buttons {
@@ -140,7 +138,7 @@ header {
     text-decoration: none;
     padding: 20px;
     margin: 20px 20px 20px 20px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #FFF;
     border: 4px solid #FFF;
     font-weight: bold;
@@ -163,7 +161,7 @@ header {
 }
 
 .quote h2 {
-    font-size: 32px;
+    font-size: 1.8em;
     padding: 20px;
     color: #fff;
     border: 4px solid #fff;
@@ -193,7 +191,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 80vh;
+    min-height: 80vh;
     width: 50vh;
     border: 4px solid #fff;
     background-color: rgba(38, 39, 47, 0.8);
@@ -203,19 +201,19 @@ header {
 
 .skillHead {
     color: #fff;
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-weight: bold;
-    
+
 }
 .list h4, .set h4 {
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-family: 'Raleway', sans-serif;
 }
 
 .list p, .set p {
     color: #ccc;
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: 'Raleway', sans-serif;
     line-height: 2em;
 }
@@ -230,7 +228,7 @@ header {
     flex: 1;
     flex-direction: column;
     justify-content: space-between;
-    
+
 }
 
 .skillbar {
@@ -255,16 +253,16 @@ header {
 
 .skillbar-title span {
 	display:block;
-	background:rgba(0, 0, 0, 0.1);
+	background: rgba(0, 0, 0, 0.1);
 	padding:0 20px;
 	height:35px;
 	line-height:35px;
 }
 
 .skillbar-bar {
-	height:35px;
-	width:0px;
-    background-color: #292B32;
+	height: 35px;
+	width: 0px;
+  background-color: #292B32;
 }
 
 .skill-bar-percent {
@@ -296,11 +294,12 @@ header {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
-    height: 80vh;
+    min-height: 80vh;
     border: 4px solid #fff;
     padding: 20px;
-    justify-content: space-between;
-    background-color: rgba(38, 39, 47, 0.8); 
+    justify-content: space-around;
+    background-color: rgba(38, 39, 47, 0.8);
+    margin: 20px 0;
 }
 
 .items {
@@ -310,7 +309,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     border: 2px solid #fff;
-    
+
 }
 
 .items:nth-child(1) {
@@ -367,7 +366,7 @@ header {
 .linkItem:hover {
     background-color: rgba(38, 39, 47, 0);
     transition: all 0.75s ease-in;
-    
+
 }
 
 .linkItem span {
@@ -378,6 +377,7 @@ header {
     opacity: 1;
     transition: all 0.75s ease-in;
     text-transform: uppercase;
+    text-align: center;
 }
 
 
@@ -386,7 +386,7 @@ header {
 .footer {
     background-color: #26272F;
     border-top: 4px solid white;
-    height: 25vh;
+    min-height: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -396,25 +396,27 @@ header {
 
 .footer h3 {
     color:  #fff;
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding: 10px;
     margin-top: 20px;
 }
 
 .legal {
     display: flex;
-    width: 25%;
+    width: 20%;
     justify-content: space-around;
 }
 
 .legal a {
     font-family: 'Raleway', sans-serif;
     color: #fff;
-    text-decoration: none;  
+    text-decoration: none;
+    font-size: 0.9em;
+    margin: 10px;
 }
 
 .legal a:hover {
-    color: #444247; 
+    color: #444247;
 }
 
 .toTop {
@@ -443,7 +445,9 @@ header {
     width: 40px;
     fill: #fff;
 }
-
+.soc {
+  margin: 20px;
+}
 .soc li {
   display: inline-block;
   margin: 10px;
@@ -453,8 +457,8 @@ header {
 }
 .soc a {
   position: relative;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
 }
 .soc svg {
   height: 100%;
@@ -502,37 +506,38 @@ header {
 
 
 
-@media only screen and (max-width: 1020px){
-    
-    
+@media only screen and (max-width: 1250px){
+
+
 }
 @media only screen and (max-width: 1100px){
 
     .mainNav a {
         font-size: 0.9em;
+        margin: 15px 20px 20px 0;
     }
-    
+
     .aboutContainer h3 {
         font-size: 1.8em;
     }
-    
+
     .aboutContainer h4 {
         font-size: 1em;
     }
-    
+
     .aboutContainer .buttons a {
         padding: 10px;
         font-size: 1em;
     }
-    
+
     .quote h2 {
-        font-size: 24px;
+        font-size: 1.6em;
     }
-    
+
     .list h3, .set h3 {
         font-size: 1.6em;
     }
-    
+
     .list h4, .set h4 {
         font-size: 1.2em;
     }
@@ -541,65 +546,129 @@ header {
         font-size: 1em;
         line-height: 2em;
     }
-    
+
     .skillbar span {
         font-size: 0.8em;
     }
-    
+
+    .portfolio .container {
+      justify-content: space-around;
+    }
+
+
+    .items {
+        min-height: 300px;
+        min-width: 300px;
+    }
+
     .items a {
         font-size: 0.9em;
     }
-    
+
     .toTop p {
         font-size: 0.8em;
     }
-    
+
     .footer h3 {
         font-size: 1em;
     }
-    
+
     .legal {
-        font-size: 0.8em;
-    }
-    
-    .soc a {
-        height: 30px;
-        width: 30px;
+      width: 40%;
     }
 
-} 
-@media only screen and (max-width: 814px){
-    
-    .mainNav a {
-        margin: 10px;
+    .legal a {
+        font-size: 0.8em;
     }
-    
+
+}
+
+
+
+@media only screen and (max-width: 814px){
+
+    .quote h2 {
+        font-size: 1.2em;
+    }
+
     #projects, #contact {
         display: none;
     }
-    
-    .mainNav a:nth-child(5) {
-        margin-right: 20px;
+
+    .toTop {
+      display: none;
     }
-    
-    
-} 
+
+    .legal {
+      width: 50%;
+    }
+
+    .soc {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer {
+      min-height: 40vh;
+    }
+}
+
+@media only screen and (max-width: 530px){
+    .mainNav a {
+      margin: 15px 20px 20px 0;
+    }
+}
+
+@media only screen and (max-width: 520px){
+  .mainNav {
+      display: none;
+  }
+
+  .aboutContainer h3 {
+    font-size: 2em;
+    margin: 100px 0 100px 0;
+  }
+
+  .aboutContainer .buttons {
+    margin-bottom: 50px;
+  }
+
+  .legal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+}
+
 @media only screen and (max-width: 479px){
-    
-    .aboutContainer h3 {
-        font-size: 1.4em;
+    .aboutContainer .buttons {
+      flex-direction: column;
     }
-    
-    .mainNav {
-        display: none;
+
+
+
+    .quote h2 {
+      font-size: 1em;
     }
-    
-} 
+
+    .items {
+        min-width: 200px;
+    }
+
+    .footer h3 {
+      text-align: center;
+      margin: 30px;
+    }
+
+}
 
 @media only screen and (max-width: 340px){
-    
-    .aboutContainer h3 {
-        font-size: 1.2em;
+
+    .items {
+        min-width: 150px;
     }
-    
-} 
+
+}
