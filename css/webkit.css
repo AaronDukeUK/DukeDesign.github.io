@@ -1,22 +1,35 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
     font-family: 'Lato', sans-serif;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 
 header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: 105px;
     position: fixed;
     width: 100%;
     border-bottom: 4px solid rgba(255,255,255,0);
+    -webkit-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
     transition: all 1s ease-in;
     z-index: 1000;
 
@@ -25,8 +38,17 @@ header {
 .scroll {
     background-color: #26272F;
     border-bottom: 4px solid rgba(255,255,255,1);
-    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+       -moz-background-clip: padding-box;
+         -o-background-clip: padding-box;
+            background-clip: padding-box;
+    -webkit-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
     transition: all 1s ease-in;
+    -webkit-transition: border 2s ease-in;
+    -o-transition: border 2s ease-in;
+    -moz-transition: border 2s ease-in;
     transition: border 2s ease-in;
 }
 
@@ -39,9 +61,15 @@ header {
     margin-top: 25px;
     margin-left: 40px;
     margin-right: 40px;
+    -webkit-transition: all 0.75s linear;
+    -o-transition: all 0.75s linear;
+    -moz-transition: all 0.75s linear;
     transition: all 0.75s linear;
-    -ms-flex: 1;
-        flex: 1;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+       -moz-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     display: block;
 }
 
@@ -49,6 +77,9 @@ header {
     min-height: 80px;
     max-height: 80px;
     margin-top: 10px;
+    -webkit-transition: all 0.75s linear;
+    -o-transition: all 0.75s linear;
+    -moz-transition: all 0.75s linear;
     transition: all 0.75s linear;
 
 }
@@ -56,10 +87,16 @@ header {
 
 .mainNav {
     padding-top: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex: 1;
-        flex: 1;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+       -moz-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
 }
 
 .mainNav a {
@@ -74,19 +111,37 @@ header {
 }
 
 .mainNav a:hover  {
-    animation: border-pulsate 2s infinite;
+    -webkit-animation: border-pulsate 2s infinite;
+       -moz-animation: border-pulsate 2s infinite;
+         -o-animation: border-pulsate 2s infinite;
+            animation: border-pulsate 2s infinite;
 }
 .projectsNav {
     position: absolute;
     right: 276px;
     top: 82px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-align: center;
-        align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 0.75s ease-in;
+    -o-transition: all 0.75s ease-in;
+    -moz-transition: all 0.75s ease-in;
     transition: all 0.75s ease-in;
 }
 
@@ -94,13 +149,28 @@ header {
     position: absolute;
     right: -6px;
     top: 82px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-align: center;
-        align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 0.75s ease-in;
+    -o-transition: all 0.75s ease-in;
+    -moz-transition: all 0.75s ease-in;
     transition: all 0.75s ease-in;
 }
 
@@ -117,12 +187,21 @@ header {
     min-height: 103vh;
     background-image: url('../img/shattered-island.gif');
     background-attachment: fixed;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .aboutContainer h3 {
@@ -143,12 +222,21 @@ header {
 
 .aboutContainer .buttons {
     margin-top: 60px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .aboutContainer .buttons a {
@@ -162,7 +250,10 @@ header {
 }
 
 .aboutContainer .buttons a:hover {
-    animation: breathing 7s linear infinite;
+    -webkit-animation: breathing 7s linear infinite;
+       -moz-animation: breathing 7s linear infinite;
+         -o-animation: breathing 7s linear infinite;
+            animation: breathing 7s linear infinite;
 }
 
 /* QUOTE 1 ========================================== */
@@ -171,12 +262,21 @@ header {
     background-color: #A8A8AB;
     min-height: 35vh;
     border: 4px solid #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 20px 0;
 }
 
@@ -196,28 +296,50 @@ header {
 .skills {
     background: url('../img/laptop.jpg');
     background-position: center;
-    background-size: cover;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-align: center;
-        align-items: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 100px 0;
 }
 
 .list, .set {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     min-height: 80vh;
     width: 60vh;
     border: 4px solid #fff;
@@ -248,20 +370,37 @@ header {
 }
 
 .set {
-    -ms-flex-pack: start;
-        justify-content: flex-start;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 
 .bars {
     margin-top: 45px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex: 1;
-        flex: 1;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+       -moz-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
 }
 
@@ -272,7 +411,13 @@ header {
 	width:100%;
 	background:#eee;
 	height:35px;
+	-webkit-transition: 0.4s linear;
+	-o-transition: 0.4s linear;
+	-moz-transition: 0.4s linear;
 	transition:0.4s linear;
+	-webkit-transition-property: width, background-color;
+	-o-transition-property: width, background-color;
+	-moz-transition-property: width, background-color;
 	transition-property:width, background-color;
 }
 
@@ -319,32 +464,46 @@ header {
     width: 100%;
     background-image: url('../img/shattered-island.gif');
     background-attachment: fixed;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .portfolio .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     width: 80%;
     min-height: 80vh;
     border: 4px solid #fff;
     padding: 20px;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     background-color: rgba(38, 39, 47, 0.8);
     margin: 20px 0;
 }
 
 .items {
-    min-height: 30%;
-    min-width: 30%;
+    height: 400px;
+    width: 400px;
     margin: 10px;
     background-position: center;
     background-repeat: no-repeat;
@@ -355,37 +514,55 @@ header {
 .items:nth-child(1) {
     background: url('../img/ag.PNG');
     background-position: center;
-    background-size: cover;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
 }
 
 .items:nth-child(2) {
     background: url('../img/best.png');
     background-position: center;
-    background-size: cover;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
 }
 
 .items:nth-child(3) {
     background: url('../img/conf.png');
     background-position: center;
-    background-size: cover;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
 }
 
 .items:nth-child(4) {
     background: url('../img/california.png');
     background-position: center;
-    background-size: cover;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
 }
 
 .items:nth-child(5) {
      background: url('../img/rsvp.png');
     background-position: center;
-    background-size: cover;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
 }
 
 .items:nth-child(6) {
     background: url('../img/puppy.png');
     background-position: center;
-    background-size: cover;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
 }
 
 
@@ -397,17 +574,32 @@ header {
     background-color: rgba(38, 39, 47, 0.8);
     text-decoration: none;
     color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.75s ease-in;
+    -o-transition: all 0.75s ease-in;
+    -moz-transition: all 0.75s ease-in;
     transition: all 0.75s ease-in;
 }
 
 .linkItem:hover {
     background-color: rgba(38, 39, 47, 0);
+    -webkit-transition: all 0.75s ease-in;
+    -o-transition: all 0.75s ease-in;
+    -moz-transition: all 0.75s ease-in;
     transition: all 0.75s ease-in;
 
 }
@@ -418,6 +610,10 @@ header {
     border: 4px solid #fff;
     padding: 10px;
     opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transition: all 0.75s ease-in;
+    -o-transition: all 0.75s ease-in;
+    -moz-transition: all 0.75s ease-in;
     transition: all 0.75s ease-in;
     text-transform: uppercase;
     text-align: center;
@@ -430,14 +626,26 @@ header {
     background-color: #26272F;
     border-top: 4px solid white;
     min-height: 25vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-align: center;
-        align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-weight: bold;
 }
 
@@ -450,14 +658,28 @@ header {
 }
 
 .legal {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
     text-align: center;
 }
@@ -477,18 +699,36 @@ header {
 .toTop {
     position: absolute;
     right: 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-align: center;
-        align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0 10px 10px 10px;
+    -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
 }
 
 .toTop:hover {
     opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
 }
 
@@ -525,15 +765,45 @@ header {
 
 .icon:hover {
   fill: #272830;
-  -ms-transform: scale(1.25);
-      transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+     -moz-transform: scale(1.25);
+      -ms-transform: scale(1.25);
+       -o-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   background: #fff;
 }
 
 .icon {
   fill: #fff;
+  -webkit-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
   transition: all 1s ease-out;
+}
+
+
+@-webkit-keyframes border-pulsate {
+    0%   { border-color: rgba(255, 255, 255, 1); }
+    50%  { border-color: rgba(255, 255, 255, 0); }
+    100% { border-color: rgba(255, 255, 255, 1); }
+}
+
+
+@-moz-keyframes border-pulsate {
+    0%   { border-color: rgba(255, 255, 255, 1); }
+    50%  { border-color: rgba(255, 255, 255, 0); }
+    100% { border-color: rgba(255, 255, 255, 1); }
+}
+
+
+@-o-keyframes border-pulsate {
+    0%   { border-color: rgba(255, 255, 255, 1); }
+    50%  { border-color: rgba(255, 255, 255, 0); }
+    100% { border-color: rgba(255, 255, 255, 1); }
 }
 
 
@@ -543,23 +813,56 @@ header {
     100% { border-color: rgba(255, 255, 255, 1); }
 }
 
+@-webkit-keyframes breathing {
+  0% { -webkit-transform: scale(1); transform: scale(1);}
+  25% { -webkit-transform: scale(1.2); transform: scale(1.2);}
+  50% { -webkit-transform: scale(1); transform: scale(1);}
+  75% { -webkit-transform: scale(0.9); transform: scale(0.9);}
+  100% { -webkit-transform: scale(1); transform: scale(1);}
+}
+
+@-moz-keyframes breathing {
+  0% { -moz-transform: scale(1); transform: scale(1);}
+  25% { -moz-transform: scale(1.2); transform: scale(1.2);}
+  50% { -moz-transform: scale(1); transform: scale(1);}
+  75% { -moz-transform: scale(0.9); transform: scale(0.9);}
+  100% { -moz-transform: scale(1); transform: scale(1);}
+}
+
+@-o-keyframes breathing {
+  0% { -o-transform: scale(1); transform: scale(1);}
+  25% { -o-transform: scale(1.2); transform: scale(1.2);}
+  50% { -o-transform: scale(1); transform: scale(1);}
+  75% { -o-transform: scale(0.9); transform: scale(0.9);}
+  100% { -o-transform: scale(1); transform: scale(1);}
+}
+
 @keyframes breathing {
-  0% { transform: scale(1);}
-  25% { transform: scale(1.2);}
-  50% { transform: scale(1);}
-  75% { transform: scale(0.9);}
-  100% { transform: scale(1);}
+  0% { -webkit-transform: scale(1); -moz-transform: scale(1); -o-transform: scale(1); transform: scale(1);}
+  25% { -webkit-transform: scale(1.2); -moz-transform: scale(1.2); -o-transform: scale(1.2); transform: scale(1.2);}
+  50% { -webkit-transform: scale(1); -moz-transform: scale(1); -o-transform: scale(1); transform: scale(1);}
+  75% { -webkit-transform: scale(0.9); -moz-transform: scale(0.9); -o-transform: scale(0.9); transform: scale(0.9);}
+  100% { -webkit-transform: scale(1); -moz-transform: scale(1); -o-transform: scale(1); transform: scale(1);}
 }
 
 .animation-element.slide-left {
   opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -webkit-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
-  transform: translate3d(-100px, 0px, 0px);
+  -webkit-transform: translate3d(-100px, 0px, 0px);
+     -moz-transform: translate3d(-100px, 0px, 0px);
+          transform: translate3d(-100px, 0px, 0px);
 }
 
 .animation-element.slide-left.in-view {
   opacity: 1;
-  transform: translate3d(0px, 0px, 0px);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -webkit-transform: translate3d(0px, 0px, 0px);
+     -moz-transform: translate3d(0px, 0px, 0px);
+          transform: translate3d(0px, 0px, 0px);
 }
 
 
@@ -611,14 +914,15 @@ header {
     }
 
     .portfolio .container {
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
     }
 
 
     .items {
-        min-height: 300px;
-        min-width: 300px;
+        height: 300px;
+        width: 300px;
     }
 
     .items a {
@@ -668,12 +972,19 @@ header {
     }
 
     .soc {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -ms-flex-pack: center;
-          justify-content: center;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+         -moz-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
     }
 
     .footer {
@@ -692,8 +1003,11 @@ header {
 
 @media only screen and (max-width: 520px){
   header {
-    -ms-flex-pack: center;
-        justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
 
@@ -732,8 +1046,13 @@ header {
 
 @media only screen and (max-width: 479px){
     .aboutContainer .buttons {
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+         -moz-box-orient: vertical;
+         -moz-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
     }
 }
 
@@ -750,6 +1069,10 @@ header {
 
 
 @media only screen and (max-width: 340px){
+  #logo {
+    max-width: 150px;
+  }
+
     section.about {
       padding: 50px 0;
     }
