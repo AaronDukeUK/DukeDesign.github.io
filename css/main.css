@@ -374,9 +374,10 @@ header {
     min-height: 25vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     font-weight: bold;
+    padding: 25px;
 }
 
 .footer h3 {
@@ -384,7 +385,7 @@ header {
     font-size: 1.2em;
     padding: 10px;
     text-align: center;
-    margin: 30px;
+    margin-bottom: 25px;
 }
 
 /*
