@@ -187,6 +187,7 @@ header {
     min-height: 103vh;
     background-image: url('../img/shattered-island.gif');
     background-attachment: fixed;
+    background-position: center;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -206,14 +207,14 @@ header {
 
 .aboutContainer h3 {
     margin-top: 100px;
-    font-size: 2.2em;
+    font-size: 2.5em;
     width: 100%;
     font-weight: bold;
     text-align: center;
     padding: 0 10px;
 }
 .aboutContainer h4 {
-    margin-top: 30px;
+    margin: 100px 0;
     text-align: center;
     font-size: 1.3em;
     font-family: 'Raleway', sans-serif;
@@ -221,7 +222,6 @@ header {
 }
 
 .aboutContainer .buttons {
-    margin-top: 60px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -256,7 +256,7 @@ header {
             animation: breathing 7s linear infinite;
 }
 
-/* QUOTE 1 ========================================== */
+/* QUOTES ========================================== */
 
 .quote {
     background-color: #A8A8AB;
@@ -281,7 +281,7 @@ header {
 }
 
 .quote h2 {
-    font-size: 1.8em;
+    font-size: 2em;
     padding: 20px;
     color: #fff;
     border: 4px solid #fff;
@@ -294,14 +294,9 @@ header {
 /* SKILLS ========================================== */
 
 .skills {
-    background: url('../img/laptop.jpg');
-    background-position: center;
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
-    background-repeat: no-repeat;
+    background: url('../img/shattered-island.gif');
     background-attachment: fixed;
+    background-position: center;
     min-height: 100vh;
     display: -webkit-box;
     display: -webkit-flex;
@@ -453,9 +448,6 @@ header {
 	line-height:35px;
 	color:#000;
 }
-
-/* QUOTE 2 ========================================== */
-
 
 /* PORTFOLIO ========================================== */
 
@@ -868,10 +860,6 @@ header {
 
 
 
-@media only screen and (max-width: 1250px){
-
-
-}
 @media only screen and (max-width: 1100px){
 
     .mainNav a {
@@ -885,11 +873,13 @@ header {
 
     .aboutContainer h4 {
         font-size: 1em;
+        margin: 50px 0;
     }
 
     .aboutContainer .buttons a {
         padding: 10px;
         font-size: 1em;
+
     }
 
     .quote h2 {
@@ -1020,12 +1010,12 @@ header {
   }
 
   section.about {
-    padding: 100px 0 50px 0;
+    padding: 50px 0;
   }
 
   .aboutContainer h3 {
     font-size: 2em;
-    margin: 75px 0 50px 0;
+    margin: 0;
   }
 
   .aboutContainer .buttons {
@@ -1054,9 +1044,6 @@ header {
           -ms-flex-direction: column;
               flex-direction: column;
     }
-}
-
-
 
     .quote h2 {
       font-size: 1em;
@@ -1066,7 +1053,7 @@ header {
         min-height: 200px;
         min-width: 200px;
     }
-
+}
 
 @media only screen and (max-width: 340px){
   #logo {
