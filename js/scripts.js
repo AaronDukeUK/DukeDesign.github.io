@@ -6,12 +6,35 @@ $('a[href="#"]').click(function(evt) {
    event.preventDefault();
 });;
 
+$("#home").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".about").offset().top
+    }, 2000);
+});
 
-$('#projects').click(function() {
-    if( $('.projectsNav').css('opacity') == '0' ) {
-    $('.projectsNav').css('opacity','1');
+$("#about").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".skills").offset().top
+    }, 2000);
+});
+
+$("#projects").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".portfolio").offset().top
+    }, 2000);
+});
+
+$("#cta").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".skills").offset().top
+    }, 2000);
+});
+
+$('#contact2').click(function() {
+    if( $('.contactNav').css('opacity') == '0' ) {
+    $('.contactNav').css('opacity','1');
     } else {
-    $('.projectsNav').css('opacity','0');
+    $('.contactNav').css('opacity','0');
     }
 });
 
@@ -39,11 +62,13 @@ function myFunction() {
     }
 }
 
-
-$('.skillbar').each(function(){
-	$(this).find('.skillbar-bar').animate({
-		width:$(this).attr('data-percent')
-	},2000);
+$(window).scroll(function(event) {
+  var y = $(this).scrollTop();
+  if (y >= 900) {
+    $('.skillbar').each(function(){
+  	   $(this).find('.skillbar-bar').animate({width:$(this).attr('data-percent')},2000);
+     });
+  }
 });
 
 $('.linkItem').mouseenter(function() {
@@ -53,8 +78,6 @@ $('.linkItem').mouseenter(function() {
 $('.linkItem').mouseleave(function() {
     $(this).find('span').css('opacity', '1');
 })
-
-
 
 
 
@@ -86,6 +109,8 @@ $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
 
 
-$('.arrow').on('click', function() {
-  document.body.scrollTop = 0;
+$(".arrow").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".about").offset().top
+    }, 2000);
 });
