@@ -154,6 +154,7 @@ header {
     background-image: url('../img/shattered-island.gif');
     background-attachment: fixed;
     background-position: center;
+    overflow: hidden;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
