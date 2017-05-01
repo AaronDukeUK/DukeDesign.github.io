@@ -67,16 +67,6 @@ header {
 .mainNav a:hover  {
     animation: border-pulsate 2s infinite;
 }
-.projectsNav {
-    position: absolute;
-    right: 276px;
-    top: 82px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    opacity: 0;
-    transition: all 0.75s ease-in;
-}
 
 .contactNav {
     position: absolute;
@@ -89,7 +79,7 @@ header {
     transition: all 0.75s ease-in;
 }
 
-.contactNav a, .projectsNav a {
+.contactNav a {
     background-color: #26272F;
 }
 
@@ -396,6 +386,7 @@ header {
     margin: 30px;
 }
 
+/*
 .legal {
     display: flex;
     flex-direction: column;
@@ -417,32 +408,7 @@ header {
     color: #444247;
 }
 
-.toTop {
-    position: absolute;
-    right: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 10px 10px 10px;
-    transition: all 0.5s ease-out;
-}
-
-.toTop:hover {
-    opacity: 0.5;
-    transition: all 0.5s ease-out;
-}
-
-.toTop p {
-    color: #fff;
-    margin-top: 10px;
-}
-
-.arrow {
-    display: block;
-    height: 40px;
-    width: 40px;
-    fill: #fff;
-}
+*/
 .soc {
   margin: 20px;
 }
@@ -561,10 +527,6 @@ header {
         font-size: 0.9em;
     }
 
-    .toTop p {
-        font-size: 0.8em;
-    }
-
     .footer h3 {
         font-size: 1em;
     }
@@ -626,6 +588,15 @@ header {
 
   .mainNav {
       display: none;
+      overflow: hidden;
+      max-width: 0;
+      max-height: 0;
+  }
+  .contactNav {
+    display: none;
+    overflow: hidden;
+    max-width: 0;
+    max-height: 0;
   }
 
   #logo {
