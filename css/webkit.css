@@ -1007,7 +1007,11 @@ header {
   }
 
   #logo {
-    max-width: 270px;
+    max-width: 250px;
+  }
+
+  #logo.scrollLogo {
+    max-width: 170px;
   }
 
   section.about {
