@@ -281,7 +281,7 @@ header {
 }
 
 .quote h2 {
-    font-size: 2em;
+    font-size: 1.8em;
     padding: 20px;
     color: #fff;
     border: 4px solid #fff;
@@ -1010,12 +1010,12 @@ header {
   }
 
   section.about {
-    padding: 50px 0;
+    padding: 110px 0;
   }
 
   .aboutContainer h3 {
     font-size: 2em;
-    margin: 0;
+    margin: 75px 0 0 0;
   }
 
   .aboutContainer .buttons {
@@ -1060,9 +1060,11 @@ header {
     max-width: 150px;
   }
 
-    section.about {
-      padding: 50px 0;
-    }
+  .aboutContainer h3 {
+
+    margin: 25px 0 0 0;
+  }
+
     .items {
         min-height: 150px;
         min-width: 150px;
