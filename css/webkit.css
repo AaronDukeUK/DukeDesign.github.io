@@ -435,7 +435,7 @@ header {
 
 .skillbar-bar {
 	height: 35px;
-	width: 0px;
+	width: 0%;
   background-color: #292B32;
 }
 
@@ -448,6 +448,7 @@ header {
 	line-height:35px;
 	color:#000;
 }
+
 
 /* PORTFOLIO ========================================== */
 

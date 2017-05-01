@@ -261,7 +261,7 @@ header {
 
 .skillbar-bar {
 	height: 35px;
-	width: 100%;
+	width: 0%;
   background-color: #292B32;
 }
 

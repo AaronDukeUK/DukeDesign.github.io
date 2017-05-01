@@ -30,14 +30,6 @@ $("#cta").click(function() {
     }, 2000);
 });
 
-$('#contact2').click(function() {
-    if( $('.contactNav').css('opacity') == '0' ) {
-    $('.contactNav').css('opacity','1');
-    } else {
-    $('.contactNav').css('opacity','0');
-    }
-});
-
 $('#contact').click(function() {
     if( $('.contactNav').css('opacity') == '0' ) {
     $('.contactNav').css('opacity','1');
